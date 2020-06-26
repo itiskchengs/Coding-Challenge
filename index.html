@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Coding Challenge</title>
   </head>
@@ -14,29 +14,43 @@
             <div class="background-container">
             <div class="background-box">
             </div>
+            <section class="fog">
+                <div class="fog-container">
+                    <div class="foggy foggy-first"></div>
+                    <div class="foggy foggy-second"></div>
+                </div>
+            </section>
                 <div class="row">
                     <div class="col-md-12 xs-6 background-text">
                         <h1>Explore</h1>
                             <div class="more-details-section">
-                                <img src="images/Plus.png">
+                                <img id="plussButton" src="images/Plus.png">
+                                <div class="window" id="windower">
+                                    <div class="window-header">
+                                        <div class="title">Explore</div>
+                                        <button id="closeBtn" class="close-button">&times;</button>
+                                    </div>
+                                    <hr class="hr-line">
+                                    <div class="window-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eius libero accusamus ab accusantium. Facere velit fuga esse eos labore suscipit vel iusto dolorum? Mollitia hic qui sunt aspernatur, iure a accusamus amet cupiditate ratione voluptas, alias ea blanditiis saepe voluptatum facilis dolorem totam velit vel omnis quis ab dolorum possimus! Dolorum ipsam incidunt sapiente voluptatem temporibus vitae porro neque nemo sit distinctio. Inventore, quas? Debitis repellendus quod repudiandae tenetur laudantium quaerat, alias natus dolorum perspiciatis quos optio quo dicta.</p>
+                                        <button id="readBtn">Read More</button>
+                                    </div>
+                                </div>
                                 <h2>More Details</h2>
                             </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 background-socials">
-                        <img src="images/facebook.png">
-                        <img src="images/Instagram.png">
+                        <a href="www.facebook.com"><img class="animate__animated animate__fadeIn"src="images/facebook.png"></a>
+                        <img class="animate__animated animate__fadeIn" src="images/Instagram.png">
                     </div>
                 </div>
+            </div>
         </div>
-           
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
-
-

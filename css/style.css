@@ -22,14 +22,22 @@ html,body
 /*****BACKGROUND & HEADINGS*****/
 .background-container{
     height: 100vh;
-    background-image: url(../images/forest.png);
+    width:100%;
+}
+.backgroundImg{
+    height: 100vh;
+    width:100%;
+    max-width: 100%;
+    position: absolute;
+    left:25% !important;
+    background: url(../images/forest.png);
 }
 .background-box{
     background-color: #611818;
-    max-width: 0%;
     height: 100%;
     padding: 0;
     margin: 0;
+    width:100%;
 }
 .background-text{
     position: absolute;
@@ -170,12 +178,13 @@ html,body
         max-width: 80%;
         height: 80%;
     }
+
+
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
     .background-text h1 {font-size:10rem;} /*1rem = 16px*/
-    .background-box{ max-width:0%;} 
     .background-text{
         position: absolute;
         top: 40%;
@@ -225,7 +234,6 @@ html,body
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 950px) { 
     .background-text h1 {font-size: 12rem;} /*1rem = 16px*/
-    .background-box{ max-width: 22%;} 
     .background-socials img{
         display: block;
         width: 4%;
@@ -273,9 +281,8 @@ html,body
     .background-text{
         position: absolute;
         top: 50%;
-        left: 9%;
-    }
-    .background-box{ max-width: 22%;}  
+        left: 12%;
+    } 
     .background-socials img{
         display: block;
         width: 3%;
@@ -330,7 +337,7 @@ html,body
         height: 100%;
         overflow: hidden;
         z-index: 1;
-        left:22%;
+        left:25%;
     }
     .foggy{
         position: absolute;
@@ -358,5 +365,7 @@ html,body
         100% {
           transform: translate3d(-200vw, 0, 0);
         }
+        
+}
 }
  
